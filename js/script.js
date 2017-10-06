@@ -143,6 +143,10 @@ const ShopHelper = new function(){
 	}
 }
 
+
+
+
+/******************************************************************************/
 const basket = ShopHelper.createBasket();
 
 
@@ -155,85 +159,4 @@ document.addEventListener('DOMContentLoaded', (e) => {
 			
  		});
  	}
-
 });
- /*
-
-
-
- */
-
-
-
-
-/**
-	Calculate bascket price
-*/
-// function appendPrice(){
-// 	let price = 0;
-	
-// 	document.querySelectorAll('.chart_list .chart-element__price').forEach( (element) => {
-// 		price += parseInt(element.value);
-// 	});
-
-// 	document.querySelectorAll('.price-wraper .price__value').forEach( (e) => {
-// 		e.innerText = price + ' грн';
-// 	});
-// }
-
-// function createBasketRecord(){
-
-// }
-
-
-
-// //document.querySelector('.chart-element[data-id="1"]')
-// document.addEventListener('DOMContentLoaded', (e) => {
-	
-// 	for(let btn of document.querySelectorAll('.stuff__btn')){
-// 		btn.onclick = (e) => {
-
-// 			// stuff parameters
-// 			let parent = btn.parentNode; 
-// 			let title = parent.querySelector('.stuff__title').innerText;
-// 			let id = parent.querySelector('.stuff__id span:last-child').innerText;
-// 			let price = parseInt( parent.querySelector('.stuff__content-price').innerText );
-// 			let priceText = price + parent.querySelector('.stuff__content-price span:last-child').innerText;
-// 			let discount = parseInt( parent.querySelector('.stuff__content-discount').innerText );
-		
-// 			//basket element
-// 			let li = document.createElement('li');
-// 			li.dataset.id = id;
-// 			li.className = 'chart-element';
-
-// 			let titleBlock = document.createElement('p');
-// 			titleBlock.innerText = title;
-// 			li.append(titleBlock);
-
-// 			let discountBlock = document.createElement('input');
-// 			discountBlock.value = discount + ' %';
-// 			discountBlock.setAttribute('readonly','readonly');
-// 			discountBlock.style.backgroundColor = 'darkgray';
-// 			discountBlock.className = 'chart-element__discount';
-// 			li.append(discountBlock);
-
-// 			let countBlock = document.createElement('input');
-// 			countBlock.value = 1;
-// 			countBlock.className = 'chart-element__count';
-// 			li.append(countBlock);
-
-// 			let priceBlock = document.createElement('input');
-// 			priceBlock.value = (price - price*discount/100)+' грн';
-// 			priceBlock.setAttribute('readonly','readonly');
-// 			priceBlock.style.backgroundColor = 'darkgray';
-// 			priceBlock.className = 'chart-element__price';
-// 			li.append(priceBlock);
-
-// 			document.querySelector('#chart .chart_list').prepend(li);
-// 			// from now on element edded to basket
-
-// 			appendPrice();
-// 		}
-// 	}
-// });
-
