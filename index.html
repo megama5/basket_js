@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="">
+</head>
+<style>
+	.stuff-holder, .lamp, .chart{
+		width: 900px;
+		margin: 0 auto;
+		margin-bottom: 15px;
+	}
+	.stuff-holder{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	.lamp__holder{
+		line-height: 55px;
+		text-align: center;
+	}
+	.stuff{
+    max-width: 300px;
+    min-height: 600px;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    padding: 15px;
+    display: inline-flex;
+    flex-flow: column;
+    justify-content: space-between;
+	}
+	.stuff__content-img{
+		max-width: 250px;
+	}
+	.stuff__btn{
+		display: block;
+		width: 100%;
+	}
+
+	.lamp_itself{
+		display: inline-block;
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		text-align: center;
+	}
+	ul{
+		list-style: none;
+	}
+
+</style>
+<body>
+
+	<header></header>
+
+	<main>
+		<section class="lamp">
+			<div class="lamp__holder">
+				<span class="lamp_itself">x</span>
+			</div>
+		</section>
+
+		<section class="stuff-holder">
+			
+				<div class="stuff" id = '1'>
+					<div class="stuff__title-wrap">
+						<h1 class="stuff__title">Крутая машина!</h1>
+						<p class="stuff__title__text">Тут будет мое описание</p>
+					</div>
+					<p class="stuff__id"><span>Номер в базе:</span><span>1</span></p>
+					<div class="stuff__content-wrap">
+						<h2 class="stuff__content-title">Названиe картинки</h2>
+						<a href="#" class="stuff__content-img-wrap">
+							<img src="img/stuff1.png" alt="Stuff" class="stuff__content-img">
+						</a>
+						<p class="stuff__content-text">Описание товара</p>
+						<p class="stuff__content-price-wrap">
+							<p class="stuff__content-price"><span>1000</span><span> грн</span></p>
+							<label><b>Скидка:</b></label>
+							<p class="stuff__content-discount"><span>7</span><span> %</span></p>
+						</p>
+					</div>
+					<button class="stuff__btn">Купить</button>
+				</div>
+
+				<div class="stuff" id = '2'>
+					<div class="stuff__title-wrap">
+						<h1 class="stuff__title">Машина, которую я хочу!</h1>
+						<p class="stuff__title__text">Тут будет мое описание</p>
+					</div>
+					<p class="stuff__id"><span>Номер в базе:</span><span>2</span></p>
+					<div class="stuff__content-wrap">
+						<h2 class="stuff__content-title">Название картинки</h2>
+						<a href="#" class="stuff__content-img-wrap">
+							<img src="img/stuff1.png" alt="Stuff" class="stuff__content-img">
+						</a>
+						<p class="stuff__content-text">Описание товара</p>
+						<p class="stuff__content-price-wrap">
+							<p class="stuff__content-price"><span>120</span><span> грн</span></p>
+							<label><b>Скидка:</b></label>
+							<p class="stuff__content-discount"><span>12</span><span> %</span></p>
+						</p>
+					</div>
+					<button class="stuff__btn">Купить</button>
+				</div>	
+
+				<div class="stuff" id = '3'>
+					<div class="stuff__title-wrap">
+						<h1 class="stuff__title">Какая-то фиговая консерва</h1>
+						<p class="stuff__title__text">Тут будет мое описание</p>
+					</div>
+					<p class="stuff__id"><span>Номер в базе:</span><span>3</span></p>
+					<div class="stuff__content-wrap">
+						<h2 class="stuff__content-title">Название картинки</h2>
+						<a href="#" class="stuff__content-img-wrap">
+							<img src="img/stuff1.png" alt="Stuff" class="stuff__content-img">
+						</a>
+						<p class="stuff__content-text">Описание товара</p>
+						<p class="stuff__content-price-wrap">
+							<p class="stuff__content-price"><span>200</span><span> грн</span></p>
+							<label><b>Скидка:</b></label>
+							<p class="stuff__content-discount"><span>10</span><span> %</span></p>
+						</p>
+					</div>price__text
+					<button class="stuff__btn">Купить</button>
+				</div>				
+
+		</section>
+		
+		<section class="basket" id="basket">
+			<div class="price price-wraper"> <!-- Сумма товаров -->
+				<span class="price__text"></span>
+				<span class="price__value"></span>
+			</div>
+
+			<ol id="chart_list" class="chart_list"></ol>
+
+			<!-- Сумма товаров -->
+			<!-- <div class="price price-wraper"> 
+				<span class="price__text"></span>
+				<span class="price__value"></span>
+			</div> -->
+		</section>
+
+
+	</main>
+
+	<footer>
+		
+	</footer>
+	<script src="js/lamp.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
